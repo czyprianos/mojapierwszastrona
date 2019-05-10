@@ -1,0 +1,82 @@
+﻿<html>
+<head>
+<title>Manipucja tabelami</title>
+</head>
+<body>
+<h1>Tabele</h1>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  td {
+    border: 5px solid black;
+    padding:5px;
+    background-color:lightgray;
+  }
+  caption {
+    caption-side:bottom;
+    color:red;
+  }
+</style>
+<table>
+<caption>Ekstraklasa 2019</caption>
+<thead>
+<tr>
+   <th scope="col">Nr</th>
+   <th scope="col">Imię</th>
+   <th scope="col">Nazwisko</th>
+   <th scope="col">Pozycja</th>
+</tr>
+</thead>
+<tr>
+	<th scope="row">1. </th>
+	<td>Adam</td>
+	<td>Kowalski</td>
+	<td>Bramkarz</td>
+</tr>
+<tr>
+	<th scope="row">2.</th>	
+	<td>Michał</td>
+	<td>Nowak</td>
+	<td>Obrońca</td>
+</tr>
+<tr>
+	<th scope="row">3. </th>
+	<td>Cyprian</td>
+	<td>Gepfert</td>
+	<td>Programista</td>
+</tr>
+<tr>
+	<th scope="row">4. </th>
+	<td>Jan</td>
+	<td>Wójcik</td>
+	<td>Pomocnik</td>
+</tr>
+<tr>
+	<th scope="row">5. </th>
+	<td>Ricardo</td>
+	<td>Sanchez</td>
+	<td rowspan="3">Napastnik</td>
+</tr>
+<tr>
+	<th scope="row">4. </th>
+	<td>Jan</td>
+	<td>Wójcik</td>
+
+</tr>
+<tr>
+	<th scope="row">5. </th>
+	<td>Ricardo</td>
+	<td>Sanchez</td>
+</tr>
+<tfoot>
+<tr>
+	<th></th>
+	<th scope="row">Podsumowanie:</th>
+	<th colspan="2">5 zawodnikow</th>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>
