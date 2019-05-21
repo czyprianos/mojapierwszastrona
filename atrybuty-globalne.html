@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+<title>
+Atrybuty globalne
+</title>
+</head>
+<body>
+<h1>Atrybuty globalne</h1>
+<p dir="rtl">Tekst akapitu</p>
+
+<p title="Tytule, pokaz sie" style="background-color:red; color:white;" draggable="true">Tekst akapitu</p>
+<style>
+#zieloneDrzewo {
+  color:brown;
+  background-color: green;
+}
+.zolteSlonce{
+background-color:blue;
+color: yellow;
+}
+.niebo {
+}
+.Krakow {
+border:5px solid black;
+}
+.niebo {
+text-decoration: underline;
+}
+</style>
+<p id="akcja">pusto</p>
+<button draggable="true"
+
+onclick="document.getElementById('akcja').innerHTML = 'klikniecie';"
+
+ondblclick="document.getElementById('akcja').innerHTML = 'podwojne klikniecie';"
+
+onmouseout = "document.getElementById('akcja').innerHTML = 'wyjechanie';"
+
+onmouseover = "document.getElementById('akcja').innerHTML = 'najechanie';"
+
+ondragenter="document.getElementById('akcja').innerHTML = 'dragenter';"
+
+>Kliknij</button>
+<p hidden>Jaki tekst</p>
+<p id="zieloneDrzewo">Przykla z ID</p>
+<p id="zieloneDrzewo">Przykla z ID</p>
+<p id="123" class="zolteSlonce Krakow niebo">Przykla z klasa 1</p>
+<p class="zolteSlonce niebo">Przykla z klasa 2 </p>
+<p class="zolteSlonce Krakow">Przykla z klasa 2 </p>
+<p class="zolteSlonce">Przykla z klasa 2 </p>
+<p class="zolteSlonce">Przykla z klasa 2 </p>
+<p class="zolteSlonce">Przykla z klasa 2 </p>
+<p title="jakis tytul">hehehe</p>
+
+</body>
+</html>
