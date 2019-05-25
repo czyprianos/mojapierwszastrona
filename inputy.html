@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+<title>Formularze - input</title>
+</head>
+<body>
+<h1>Formularze - inputy</h1>
+<form action="">
+<fieldset>
+<legend style="border:2px solid black; padding:5px;">Logowanie</legend>
+<div>
+	<input type="text" name="uzytkownik" value="123" placeholder="Wpisz jakis tekst...">
+</div>
+
+<div>
+	<input type="text" name="imie"  readonly placeholder="Wpisz imie...">
+</div>
+<input  name="nazwisko"  disabled placeholder="Wpisz nazwisko...">
+
+<div>
+	<input  name="uzytkownik" value="123" placeholder="Wpisz jakis tekst..." spellcheck>
+</div>
+<input type="password" name="password" placeholder="podaj haslo">
+<input type="hidden" name="losoweznaki" value="2h1gv3g4lhjv123r1923r1b293br">
+
+
+</fieldset>
+
+<fieldset>
+<legend>Ankieta: Co najbardziej lubisz jesc?</legend>
+<label for="chipsy">chipsy</label>
+<input type="radio" id="chipsy" name="jedzonko" value="chipsy">
+
+<label for="marchewka">marchewka</label>
+<input type="radio" id="marchewka" name="jedzonko" value="marchewka">
+
+<label for="burak">burak</label>
+<input type="radio" id="burak" name="jedzonko" value="burak">
+
+<label for="kapusta">kapusta</label>
+<input type="radio" id="kapusta" name="jedzonko" value="kapusta">
+
+<label for="cebula">cebula</label>
+<input type="radio" id="cebula" name="jedzonko" value="cebula">
+
+</fieldset>
+
+<fieldset>
+<legend>Ankieta: czego nie jesz?</legend>
+<label for="mieso">Miecho</label>
+<input type="checkbox" value="mieso" name="niejadalne" id="mieso">
+
+<label for="warzywa">Warzywa</label>
+<input type="checkbox" value="warzywa" name="niejadalne" id="warzywa">
+
+<label for="owoce">Owoce</label>
+<input type="checkbox" value="owoce" name="niejadalne" id="owoce">
+</fieldset>
+
+<input type="number" step="10" min="100" max="200">
+<fieldset>
+<legend>Pliki</legend>
+<input type="file" name="obrazek" accept="image/png">
+<input type="file" name="pliki" multiple>
+</fieldset>
+
+<fieldset>
+<legend>Supertekst</legend>
+<input
+placeholder="onchange przyklad - console.log"
+ name="supertekst" onchange="console.log(this.value)">
+<input name="supertekst" 
+placeholder="oninput przyklad - rezultat"
+oninput="document.querySelector('#rezultat').innerText = this.value.split('-').reverse().join(',')">
+<p id="rezultat"></p>
+<button>Wyslij</button>
+</fieldset>
+</form>
+</body>
+</html>
